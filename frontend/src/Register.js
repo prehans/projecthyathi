@@ -40,9 +40,24 @@ class Register extends React.Component {
 
   render() {
     return (
-      <div style={{ marginTop: '200px' }}>
+      <div
+      className="login-container"
+      style={{
+        minHeight: "100vh",
+        backgroundImage: "url('https://1.bp.blogspot.com/-HHvB1Mb1t1k/YP5DwJ0_QcI/AAAAAAAAJkM/T_dRe_w3IZA_oECCa723rmHXywsDZIzUwCPcBGAsYHg/w919/pokemon-unite-pokemon-4k-uhdpaper.com-830.1_a-thumbnail.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "flex",
+        justifyContent: "center", // Center horizontally
+        alignItems: "center", // Center vertically
+        padding: "0 50px", // Add padding for spacing
+        
+        
+      }}
+    >
+      <div style={{ marginTop: '-40px' }}>
         <div>
-          <h2>Register</h2>
+          <h1>Register</h1>
         </div>
 
         <div>
@@ -83,7 +98,7 @@ class Register extends React.Component {
             className="button_style"
             variant="contained"
             color="primary"
-            size="small"
+            size="big"
             disabled={this.state.username == '' && this.state.password == ''}
             onClick={this.register}
           >
@@ -91,6 +106,7 @@ class Register extends React.Component {
           </Button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link
             // href="/"
+           
             component="button"
             style={{ fontFamily: "inherit", fontSize: "inherit" }}
             onClick={() => {
@@ -100,6 +116,7 @@ class Register extends React.Component {
             Login
           </Link>
         </div>
+      </div>
       </div>
     );
   }

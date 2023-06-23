@@ -41,13 +41,31 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div style={{ marginTop: '200px' }}>
+      <div
+        className="login-container"
+        style={{
+          minHeight: "100vh",
+          backgroundImage: "url('https://coolwallpapers.me/picsup/6125673-fantasy-coffee-tsaoshin-yellow-pokemon-pikachu-art-window-cute-cup.jpg')",
+          backgroundSize: "cover",
+          
+          display: "flex",
+          justifyContent: "flex-end",
+          alignItems: "center",
+          padding: "0 50px", // Add padding for spacing
+          
+          
+        }}
+      >
+      
+      {/* <div style={{ marginTop: '50px' }}> */}
+      <div style={{ marginRight: "400px" }}> 
         <div>
-          <h2>Login</h2>
+          <h1 >Login</h1>
         </div>
 
-        <div>
+        <div >
           <TextField
+          color="white"
             id="standard-basic"
             type="text"
             autoComplete="off"
@@ -73,7 +91,7 @@ class Login extends React.Component {
             className="button_style"
             variant="contained"
             color="primary"
-            size="small"
+            size="big"
             disabled={this.state.username == '' && this.state.password == ''}
             onClick={this.login}
           >
@@ -90,6 +108,7 @@ class Login extends React.Component {
             Register
           </Link>
         </div>
+      </div>
       </div>
     );
   }
