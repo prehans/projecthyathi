@@ -40,7 +40,25 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <div style={{ marginTop: '200px' }}>
+      <div
+        className="login-container"
+        style={{
+          minHeight: "100vh",
+          backgroundImage: "url('https://coolwallpapers.me/picsup/6125673-fantasy-coffee-tsaoshin-yellow-pokemon-pikachu-art-window-cute-cup.jpg')",
+          backgroundSize: "cover",
+          
+          display: "flex",
+          justifyContent: "flex-end",
+          alignItems: "center",
+          padding: "0 50px", // Add padding for spacing
+          
+          
+        }}
+      >
+      
+      {/* <div style={{ marginTop: '50px' }}> */}
+      <div style={{ marginRight: "400px" }}> 
+      {/* <div style={{ marginTop: '200px' }}> */}
         <div>
           <h2>Login</h2>
         </div>
@@ -82,6 +100,7 @@ export default class Login extends React.Component {
             Register
           </Link>
         </div>
+      </div>
       </div>
     );
   }
